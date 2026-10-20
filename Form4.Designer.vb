@@ -22,6 +22,7 @@ Partial Class GAME
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        components = New ComponentModel.Container()
         Panel1 = New Panel()
         PictureBox3 = New PictureBox()
         Label4 = New Label()
@@ -41,8 +42,8 @@ Partial Class GAME
         Button2 = New Button()
         Button1 = New Button()
         Button10 = New Button()
-        Button11 = New Button()
         Button12 = New Button()
+        Timer1 = New Timer(components)
         Panel1.SuspendLayout()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
@@ -68,7 +69,7 @@ Partial Class GAME
         ' PictureBox3
         ' 
         PictureBox3.Image = My.Resources.Resources._8ca02b84_7373_49c6_a208_71b4c9ba4522
-        PictureBox3.Location = New Point(447, 3)
+        PictureBox3.Location = New Point(445, 3)
         PictureBox3.Name = "PictureBox3"
         PictureBox3.Size = New Size(388, 81)
         PictureBox3.SizeMode = PictureBoxSizeMode.StretchImage
@@ -262,29 +263,22 @@ Partial Class GAME
         Button10.Text = "RESET"
         Button10.UseVisualStyleBackColor = False
         ' 
-        ' Button11
-        ' 
-        Button11.BackColor = Color.MidnightBlue
-        Button11.Font = New Font("Engravers MT", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button11.ForeColor = SystemColors.ButtonHighlight
-        Button11.Location = New Point(1110, 605)
-        Button11.Name = "Button11"
-        Button11.Size = New Size(212, 57)
-        Button11.TabIndex = 12
-        Button11.Text = "NEW GAME"
-        Button11.UseVisualStyleBackColor = False
-        ' 
         ' Button12
         ' 
         Button12.BackColor = Color.MidnightBlue
         Button12.Font = New Font("Engravers MT", 26.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button12.ForeColor = SystemColors.ButtonHighlight
-        Button12.Location = New Point(1110, 670)
+        Button12.Location = New Point(1110, 609)
         Button12.Name = "Button12"
         Button12.Size = New Size(212, 57)
         Button12.TabIndex = 13
         Button12.Text = "EXIT"
         Button12.UseVisualStyleBackColor = False
+        ' 
+        ' Timer1
+        ' 
+        Timer1.Enabled = True
+        Timer1.Interval = 30000
         ' 
         ' GAME
         ' 
@@ -293,7 +287,6 @@ Partial Class GAME
         BackColor = Color.SteelBlue
         ClientSize = New Size(1370, 749)
         Controls.Add(Button12)
-        Controls.Add(Button11)
         Controls.Add(Button10)
         Controls.Add(Panel2)
         Controls.Add(Panel1)
@@ -320,7 +313,6 @@ Partial Class GAME
     Friend WithEvents Button5 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Button10 As Button
-    Friend WithEvents Button11 As Button
     Friend WithEvents Button12 As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox2 As PictureBox
@@ -329,4 +321,5 @@ Partial Class GAME
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents Timer1 As Timer
 End Class

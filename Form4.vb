@@ -2,6 +2,7 @@
 Imports System.Drawing.Text
 
 Public Class GAME
+    Dim Timeleft As Integer = 30
     Dim plusone As Integer
     Dim checker As Boolean
 
@@ -224,15 +225,34 @@ Public Class GAME
 
     Private Sub ScoreChecker()
         If Convert.ToInt32(Label3.Text) = 5 Then
-            MessageBox.Show("Game Over! Player X Wins", "Result Overall")
+            MessageBox.Show("Game Over! Player X Wins, Please reset for a new game", "Result Overall")
             ResetEntireGame()
         End If
         If Convert.ToInt32(Label4.Text) = 5 Then
-            MessageBox.Show("Game Over! Player O Wins", "Result Overall")
+            MessageBox.Show("Game Over! Player O Wins, Please reset for a new game", "Result Overall")
             ResetEntireGame()
         End If
 
     End Sub
+
+    Private Sub Button11_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        If Timeleft > 0 Then
+            Timeleft -= 1
+            Label15.Text = "Time left: " & Timeleft & "s"
+        Else
+            Timer1.Stop()
+            MessageBox.Show("Time's up! your turn is skipped.", "Timeout", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            'Timeleft = 30
+            Label15.Text = "Time left: " & Timeleft & "s"
+            Timer1.Start()
+        End If
+
+    End Sub
+
 
 
 End Class

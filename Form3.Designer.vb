@@ -26,8 +26,6 @@ Partial Class Guidelines
         Label1 = New Label()
         Label2 = New Label()
         Button2 = New Button()
-        Label3 = New Label()
-        Label4 = New Label()
         Label5 = New Label()
         Label6 = New Label()
         Label7 = New Label()
@@ -80,38 +78,16 @@ Partial Class Guidelines
         Button2.Text = "BACK"
         Button2.UseVisualStyleBackColor = False
         ' 
-        ' Label3
-        ' 
-        Label3.AutoSize = True
-        Label3.Font = New Font("Bookman Old Style", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label3.ForeColor = SystemColors.ButtonFace
-        Label3.Location = New Point(155, 229)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(510, 21)
-        Label3.TabIndex = 13
-        Label3.Text = "2. Each player was given a time of 30 seconds to play"
-        ' 
-        ' Label4
-        ' 
-        Label4.AutoSize = True
-        Label4.Font = New Font("Bookman Old Style", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label4.ForeColor = SystemColors.ButtonFace
-        Label4.Location = New Point(155, 267)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(803, 21)
-        Label4.TabIndex = 14
-        Label4.Text = "3. The player who failed to answer within the time will receive a deduction of 1 point"
-        ' 
         ' Label5
         ' 
         Label5.AutoSize = True
         Label5.Font = New Font("Bookman Old Style", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label5.ForeColor = SystemColors.ButtonFace
-        Label5.Location = New Point(155, 302)
+        Label5.Location = New Point(155, 211)
         Label5.Name = "Label5"
         Label5.Size = New Size(998, 21)
         Label5.TabIndex = 15
-        Label5.Text = "4. There are Five (5) rounds to play, and the player who got the highest score will be declared as a winner"
+        Label5.Text = "2. There are Five (5) rounds to play, and the player who got the highest score will be declared as a winner"
         ' 
         ' Label6
         ' 
@@ -129,22 +105,22 @@ Partial Class Guidelines
         Label7.AutoSize = True
         Label7.Font = New Font("Bookman Old Style", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label7.ForeColor = SystemColors.ButtonFace
-        Label7.Location = New Point(155, 371)
+        Label7.Location = New Point(155, 253)
         Label7.Name = "Label7"
         Label7.Size = New Size(1008, 21)
         Label7.TabIndex = 17
-        Label7.Text = "6. 1 point rewarded for the player who successfully make a diagonal, horizontal, or vertical lines (ALL X/Y)" & vbCrLf
+        Label7.Text = "4. 1 point rewarded for the player who successfully make a diagonal, horizontal, or vertical lines (ALL X/Y)" & vbCrLf
         ' 
         ' Label8
         ' 
         Label8.AutoSize = True
         Label8.Font = New Font("Bookman Old Style", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label8.ForeColor = SystemColors.ButtonFace
-        Label8.Location = New Point(155, 338)
+        Label8.Location = New Point(155, 232)
         Label8.Name = "Label8"
         Label8.Size = New Size(799, 21)
         Label8.TabIndex = 18
-        Label8.Text = "5. The player who wins 3 times straight will be automatically declared as the winner"
+        Label8.Text = "3. The player who wins 3 times straight will be automatically declared as the winner"
         ' 
         ' Guidelines
         ' 
@@ -156,8 +132,6 @@ Partial Class Guidelines
         Controls.Add(Label7)
         Controls.Add(Label6)
         Controls.Add(Label5)
-        Controls.Add(Label4)
-        Controls.Add(Label3)
         Controls.Add(Button2)
         Controls.Add(Label2)
         Controls.Add(Label1)
@@ -171,8 +145,6 @@ Partial Class Guidelines
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Button2 As Button
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label

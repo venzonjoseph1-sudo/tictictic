@@ -31,6 +31,7 @@ Partial Class Form1
         Button1 = New Button()
         PictureBox6 = New PictureBox()
         PictureBox7 = New PictureBox()
+        PictureBox8 = New PictureBox()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
@@ -38,6 +39,7 @@ Partial Class Form1
         CType(PictureBox5, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox6, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox7, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox8, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' PictureBox1
@@ -74,7 +76,7 @@ Partial Class Form1
         ' 
         ' PictureBox5
         ' 
-        PictureBox5.Location = New Point(146, 358)
+        PictureBox5.Location = New Point(173, 336)
         PictureBox5.Name = "PictureBox5"
         PictureBox5.Size = New Size(155, 150)
         PictureBox5.TabIndex = 4
@@ -85,7 +87,7 @@ Partial Class Form1
         Label1.AutoSize = True
         Label1.Font = New Font("Palace Script MT", 90F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = SystemColors.ControlLightLight
-        Label1.Location = New Point(569, 177)
+        Label1.Location = New Point(579, 358)
         Label1.Name = "Label1"
         Label1.Size = New Size(306, 111)
         Label1.TabIndex = 5
@@ -94,9 +96,9 @@ Partial Class Form1
         ' Button1
         ' 
         Button1.Font = New Font("Perpetua", 21.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button1.Location = New Point(609, 379)
+        Button1.Location = New Point(597, 542)
         Button1.Name = "Button1"
-        Button1.Size = New Size(246, 63)
+        Button1.Size = New Size(288, 77)
         Button1.TabIndex = 6
         Button1.Text = "ENTER"
         Button1.UseVisualStyleBackColor = True
@@ -117,12 +119,23 @@ Partial Class Form1
         PictureBox7.TabIndex = 8
         PictureBox7.TabStop = False
         ' 
+        ' PictureBox8
+        ' 
+        PictureBox8.Image = My.Resources.Resources._8ca02b84_7373_49c6_a208_71b4c9ba45221
+        PictureBox8.Location = New Point(428, 24)
+        PictureBox8.Name = "PictureBox8"
+        PictureBox8.Size = New Size(599, 249)
+        PictureBox8.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox8.TabIndex = 9
+        PictureBox8.TabStop = False
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.SteelBlue
         ClientSize = New Size(1370, 749)
+        Controls.Add(PictureBox8)
         Controls.Add(PictureBox7)
         Controls.Add(PictureBox6)
         Controls.Add(Button1)
@@ -141,6 +154,7 @@ Partial Class Form1
         CType(PictureBox5, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox6, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox7, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox8, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -154,5 +168,6 @@ Partial Class Form1
     Friend WithEvents Button1 As Button
     Friend WithEvents PictureBox6 As PictureBox
     Friend WithEvents PictureBox7 As PictureBox
+    Friend WithEvents PictureBox8 As PictureBox
 
 End Class
